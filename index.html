@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMirror Editor</title>
+    <script type="module">
+        import { createEditor } from "./codemirror-setup.js";
+
+        window.onload = () => {
+            const editorContainer = document.getElementById("editor");
+            createEditor(editorContainer);
+        };
+    </script>
+</head>
+<body>
+    <h1>Simple CodeMirror Implementation</h1>
+    <div id="editor"></div>
+</body>
+</html>
